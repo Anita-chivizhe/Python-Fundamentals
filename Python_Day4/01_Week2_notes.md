@@ -60,3 +60,7 @@ print("Vote for A")
 # Need to add more notes
 
 # Refactoring
+
+# Loops
+> for loop
+> while loop
