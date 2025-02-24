@@ -62,5 +62,6 @@ print("Vote for A")
 # Refactoring
 
 # Loops
-> for loop
+
+> for loop (increments)
 > while loop
