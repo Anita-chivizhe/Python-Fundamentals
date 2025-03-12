@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      .body {
+        font-family: "Roboto";
+        font-weight: 400;
+        font-style: normal;
+        color: #000;
+        font-size: 100%;
+        margin: 0;
+        width: 100%;
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+        margin: 0px;
+      }
+      .products-container {
+        font-family: "Roboto";
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: stretch;
+      }
+      .Diverse-products-container {
+        background: #76c2b6;
+        border-radius: 3px;
+      }
+      .Partnerships-container {
+        background: #9db7b4;
+        border-radius: 3px;
+        flex: 1;
+        min-height: 200px;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        width: 260px;
+        transition: 1s all;
+      }
+
+      .Partnerships-container:active {
+        background: rgb(230, 27, 60);
+        transform: scale(0.9);
+        cursor: pointer;
+      }
+      /* .Partnerships-container:hover{
+        background-color: aqua;
+        transform: scale(0.5) rotate(360deg);
+        border-radius: 50%;
+
+      }*/
+      .Technology-container {
+        background: #5493bd;
+        border-radius: 3px;
+        flex: 1;
+        min-height: 200px;
+        flex-direction: column;
+        padding-bottom: 100px;
+        width: 260px;
+      }
+      .Sustainability-container {
+        background: #825474;
+        border-radius: 3px;
+        flex: 1;
+        min-height: 200px;
+        flex-direction: column;
+        padding-bottom: 100px;
+        width: 260px;
+      }
+      .H1 {
+        text-align: center;
+        display: block;
+        justify-content: left;
+        margin-left: 3px;
+        padding-left: 15px;
+        padding-top: 50px;
+      }
+      .h2 {
+        text-align: center;
+        display: flex;
+        justify-content: left;
+        margin-left: 5px;
+        padding-left: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="products-container">
+      <div class="Diverse-products-container">
+        <h2 class="H1"><i class="fa-solid fa-gauge"></i> Diverse products</h2>
+        <ul>
+          <li>Insurance</li>
+          <li>Savings and Investments</li>
+          <li>Corporate</li>
+          <li>Asset and Wealth Management</li>
+          <li>Retail Credit</li>
+          <li>Financial Planning and Advice</li>
+          <li>Wills and Estates</li>
+          <li>Healthcare</li>
+        </ul>
+      </div>
+      <div class="Partnerships-container">
+        <h2 class="H1"><i class="fa-solid fa-thumbs-up"></i> Partnerships</h2>
+        <ul>
+          <li>Banks</li>
+          <li>Telcos</li>
+          <li>Financial Services</li>
+          <li>Non-financial Services</li>
+          <li>Retailers</li>
+          <li>Strategic co-investors in Africa</li>
+        </ul>
+      </div>
+      <div class="Technology-container">
+        <h2 class="H1"><i class="fa-regular fa-clipboard"></i> Technology</h2>
+        <ul>
+          <li>Modernising core business</li>
+          <li>Future-fit client ecosystems</li>
+          <li>Disruptive product innovation and digitalisation</li>
+          <li>Non-financial Services</li>
+          <li>Digital native businesses</li>
+          <li>Strategic co-investors in Africa</li>
+        </ul>
+      </div>
+      <div class="Sustainability-container">
+        <h2 class="H1">
+          <i class="fa-regular fa-snowflake"></i> Sustainability
+        </h2>
+        <ul>
+          <li>Shared value creation</li>
+          <li>Financial inclusion</li>
+          <li>ESG integration in asset management</li>
+          <li>Strategic partnerships</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
+
+/*<img
+  src="./Python_Day15/stats-preview-card-component-main/Python_Day15/Python_Day15 copy/Python_Day15/stats-preview-card-component-main/images/image-header-desktop.jpg"
+  alt=""
+/>
+*/
