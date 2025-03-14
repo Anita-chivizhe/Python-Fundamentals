@@ -98,6 +98,26 @@ WHERE year% 2 = 0;
 
 ![alt text](image-4.png)
 
+# Exercise 10 — Tasks
+
+Find the longest time that an employee has been at the studio
+
+```sql
+
+```
+
+For each role, find the average number of years employed by employees in that role
+
+```sql
+
+```
+
+Find the total number of employee years worked in each building
+
+```sql
+
+```
+
 ```sql
 
 ```
