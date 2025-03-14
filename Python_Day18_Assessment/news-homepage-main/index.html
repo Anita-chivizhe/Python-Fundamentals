@@ -24,18 +24,18 @@
     <style>
       body {
         font-family: "Inter";
-        font-family: "Inter", sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        display: grid;
-        place-content: center;
-        min-height: 100vh;
-        margin: 0px;
-        padding: 40px;
-      }
+          font-family: "Inter", sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+          display: grid;
+          place-content: center;
+          min-height: 100vh;
+          margin: 0px;
+          padding: 40px;
+        }
 
       header {
         display: flex;
@@ -52,7 +52,7 @@
         list-style: none;
         display: flex;
         gap: 40px;
-        font-family: ("Inter", sans-serif, "Times New Roman", Times, serif);
+        font-family: ("Inter",sans-serif,'Times New Roman', Times, serif);
       }
       nav li {
         color: hsl(240, 100%, 5%);
@@ -71,13 +71,10 @@
         align-items: center;
       }
       .hero-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-        width: 100%;
-
-        justify-content: center;
-
+        display: flex;
+        width: 100%
+        justify-content: space-between;
+        align-items: end;
         font-family: "Inter";
       }
       .hero-content h1 {
@@ -128,7 +125,7 @@
         letter-spacing: 0.5px;
         margin-right: ;
       }
-      main {
+      main{
         display: flex;
         flex-direction: column;
         padding: 20px;
