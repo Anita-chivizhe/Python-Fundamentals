@@ -130,16 +130,38 @@ GROUP BY building;
 Find the number of Artists in the studio (without a HAVING clause)
 
 ```sql
-
+SELECT role , count(Role)
+FROM employees
+WHERE Role = "Artist";
 ```
 
 Find the number of Employees of each role in the studio
 
 ```sql
-
+SELECT * , count(name)
+FROM employees
+Group by Role;
 ```
 
 Find the total number of years employed by all Engineers
+
+```sql
+SELECT years_employed, sum(	years_employed)
+FROM employees
+WHERE Role = "Engineer";
+```
+
+![alt text](image-6.png)
+
+# Exercise 12 — Tasks
+
+Find the number of movies each director has directed
+
+```sql
+
+```
+
+Find the total domestic and international sales that can be attributed to each director
 
 ```sql
 
