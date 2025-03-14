@@ -44,5 +44,60 @@ FROM buildings;
 List all buildings and the distinct employee roles in each building (including empty buildings)
 
 ```sql
+SELECT DISTINCT buildings.building_name, employees.role
+FROM buildings
+  LEFT JOIN employees
+    ON buildings.building_name = employees.building
+```
+
+![alt text](image-2.png)
+
+# Exercise 8 — Tasks
+
+Find the name and role of all employees who have not been assigned to a building
+
+```sql
+SELECT *
+FROM employees
+WHERE building is Null;
+```
+
+Find the names of the buildings that hold no employees
+
+```sql
+years_employed
+```
+
+![alt text](image-3.png)
+
+# Exercise 9 — Tasks
+
+List all movies and their combined sales in millions of dollars
+
+```sql
+SELECT title, (domestic_sales +	international_sales)/1000000 as Combined_Sales
+FROM movies
+INNER JOIN boxoffice ON movies.id = boxoffice.movie_id;
+```
+
+List all movies and their ratings in percent
+
+```sql
+SELECT title, boxoffice .rating*10 as rating_percent
+FROM movies
+INNER JOIN boxoffice ON movies.id = boxoffice.movie_id;
+```
+
+List all movies that were released on even number years
+
+```sql
+SELECT *
+FROM movies
+WHERE year% 2 = 0;
+```
+
+![alt text](image-4.png)
+
+```sql
 
 ```
