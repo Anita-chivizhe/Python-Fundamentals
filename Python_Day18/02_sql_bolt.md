@@ -158,14 +158,21 @@ WHERE Role = "Engineer";
 Find the number of movies each director has directed
 
 ```sql
-
+SELECT director, count(title)
+FROM movies
+Group by director;
 ```
 
 Find the total domestic and international sales that can be attributed to each director
 
 ```sql
-
+SELECT director, sum(domestic_sales + international_sales) as Total_Sales
+FROM movies
+INNER JOIN boxoffice ON movies.id = boxoffice.movie_id
+Group by director;
 ```
+
+![alt text](image-7.png)
 
 ```sql
 
