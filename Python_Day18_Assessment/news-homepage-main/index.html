@@ -22,6 +22,26 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Inter";
+        body {
+          background-color: hsl(233, 47%, 7%);
+          font-family: "Inter", sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+          display: grid;
+          place-content: center;
+          min-height: 100vh;
+          margin: 0px;
+        }
+      }
       header {
         display: flex;
         justify-content: space-between;
@@ -48,8 +68,7 @@
         align-items: center;
       }
       .hero img {
-        width: 60%;
-        min-width: 700px;
+        width: 100%;
         object-fit: contain;
       }
       .hero-content {
@@ -61,24 +80,49 @@
       .hero-content h1 {
         font: size 15px;
         margin-bottom: 10px;
+        flex-wrap: wrap;
+        width: 50%;
+        font-size: 40px;
       }
       .hero-content p {
         font: size 15px;
         margin-bottom: 10px;
+        width: 50%;
+        justify-content: right;
       }
       .btn {
         display: inline-block;
-        background-color: red;
+        background-color: hsl(5, 85%, 63%);
         color: lack;
         padding: 10px 20px;
         text-decoration: none;
         font-size: 15px;
         border-radius: 5px;
-        width: 100px;
+        width: 60px;
         text-transform: uppercase;
+        justify-content: center;
+        font-weight: bold;
       }
       .btn:hover {
-        background-color: darkred;
+        background-color: hsl(5, 85%, 63%);
+      }
+      .articles {
+        display: flex;
+        padding: 15px;
+        padding-bottom: 20px;
+        gap: 20px;
+      }
+      article h3 {
+        color: hsl(5, 85%, 63%);
+        padding: 10px;
+        font-size: 20px;
+      }
+      article p {
+        font-size: 12px;
+        line-height: 15px;
+        justify-content: center;
+        width: 60%;
+        letter-spacing: 0.5px;
       }
     </style>
   </head>
@@ -130,15 +174,5 @@
         </article>
       </section>
     </main>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
   </body>
 </html>
-
-.attribution { font-size: 11px; text-align: center; } .attribution a { color:
-hsl(228, 45%, 44%); }
