@@ -103,20 +103,27 @@ WHERE year% 2 = 0;
 Find the longest time that an employee has been at the studio
 
 ```sql
-
+SELECT *, max(years_employed)
+FROM employees;
 ```
 
 For each role, find the average number of years employed by employees in that role
 
 ```sql
-
+SELECT *, avg(years_employed)
+FROM employees
+GROUP BY Role;
 ```
 
 Find the total number of employee years worked in each building
 
 ```sql
-
+SELECT *, sum(years_employed)
+FROM employees
+GROUP BY building;
 ```
+
+![alt text](image-5.png)
 
 ```sql
 
