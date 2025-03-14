@@ -125,6 +125,26 @@ GROUP BY building;
 
 ![alt text](image-5.png)
 
+# Exercise 11 — Tasks
+
+Find the number of Artists in the studio (without a HAVING clause)
+
+```sql
+
+```
+
+Find the number of Employees of each role in the studio
+
+```sql
+
+```
+
+Find the total number of years employed by all Engineers
+
+```sql
+
+```
+
 ```sql
 
 ```
