@@ -31,10 +31,12 @@
       header {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 20px;
+        margin-bottom: 30px;
       }
       .logo {
-        font-size: 50px;
+        font-size: 100px;
         font-weight: bold;
         font-family: "Inter";
       }
@@ -46,48 +48,92 @@
       }
       nav li {
         color: hsl(240, 100%, 5%);
+        margin-left: 20px;
+        font-size: 20px;
       }
       .hero {
+        width: 100%;
         display: block;
         flex-wrap: wrap;
         gap: 20px;
         align-items: center;
+        margin-bottom: 20px;
       }
       .hero img {
-        min-width: 700px;
-        object-fit: contain;
+        width: 100%;
+        object-fit: cover;
       }
       .hero-content {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-content: center;
+        gap: 30px;
+        justify-content: space-between;
+        align-items: start;
         font-family: "Inter";
       }
       .hero-content h1 {
-        font: size 15px;
-        margin-bottom: 10px;
+        font-size: 100px;
+        margin-top: 20px;
+        line-height: 1.2;
       }
-      .hero-content p {
-        font: size 15px;
-        margin-bottom: 10px;
+      .hero-content-2 {
+        font-size: 30px;
+        margin-top: 20px;
+        width: 100%;
+        line-height: 1.2;
       }
       .btn {
         font-weight: 700;
         display: inline-block;
         background-color: hsl(5, 85%, 63%);
-        color: lack;
+        color: hsl(240, 100%, 5%);
         padding: 10px 20px;
         text-decoration: none;
-        font-size: 15px;
+        font-size: 30px;
         border-radius: 5px;
-        width: fit-content;
+        width: 55%;
         text-transform: uppercase;
+        letter-spacing: 15px;
       }
       .btn:hover {
         background-color: darkred;
       }
       .articles {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+      }
+      .articles h3 {
+        color: hsl(5, 85%, 63%);
+        font-family: "Inter";
+        font-size: 50px;
+      }
+      .articles h4 {
+        font-family: "Inter";
+        font-size: 20px;
+      }
+      .articles p {
+        font-family: "Inter";
+        font-size: 20px;
+        width: 200px;
+      }
+      .articles-content {
+        list-style: none;
+        padding: 0px;
         display: flex;
+        gap: 50px;
+        margin: 0px;
+      }
+      .articles-1 {
+        display: flex;
+        flex: wrap;
+      }
+      .articles img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
       }
       main {
         width: 100%;
@@ -117,7 +163,7 @@
         <div class="hero-content">
           <h1>The Bright Future of Web 3.0?</h1>
           <div>
-            <p>
+            <p class="hero-content-2">
               We dive into the next evolution of the web that claims to put the
               power of the platforms back into the hands of the people. But is
               it really fulfilling its promise?
@@ -128,20 +174,29 @@
       </section>
 
       <section class="articles">
-        <article>
-          <h3>01</h3>
-          <h4>Reviving Retro PCs</h4>
-          <p>What happens when old PCs are given modern upgrades?</p>
+        <article class="articles-1">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs" />
+          <ul class="article-content">
+            <h3>01</h3>
+            <h4>Reviving Retro PCs</h4>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </ul>
         </article>
-        <article>
-          <h3>02</h3>
-          <h4>Top 10 Laptops of 2022</h4>
-          <p>What happens when old PCs are given modern upgrades?</p>
+        <article class="articles-1">
+          <img src="./assets/images/image-top-laptops.jpg" alt="Keyboard" />
+          <ul class="article-content">
+            <h3>02</h3>
+            <h4>Top 10 Laptops of 2022</h4>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </ul>
         </article>
-        <article>
-          <h3>03</h3>
-          <h4>The Growth of Gaming</h4>
-          <p>How the pandemic has sparked fresh opportunities.</p>
+        <article class="articles-1">
+          <img src="./assets/images/image-gaming-growth.jpg" alt="" />
+          <ul class="article-content">
+            <h3>03</h3>
+            <h4>The Growth of Gaming</h4>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </ul>
         </article>
       </section>
     </main>
