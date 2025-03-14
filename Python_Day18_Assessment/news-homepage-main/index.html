@@ -42,7 +42,8 @@
         color: hsl(240, 100%, 5%);
       }
       .hero {
-        display: flex;
+        display: block;
+        flex-wrap: wrap;
         gap: 20px;
         align-items: center;
       }
@@ -52,10 +53,28 @@
         object-fit: contain;
       }
       .hero-content {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         justify-content: center;
+        font-family: "Inter";
+      }
+      .hero-content h1 {
+        font: size 15px;
+        margin-bottom: 10px;
+      }
+      .hero-content p {
+        font: size 15px;
+        margin-bottom: 10px;
+      }
+      .btn {
+        display: inline-block;
+        background-color: red;
+        color: lack;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 15px;
+        border-radius: 5px;
+        width: 100px;
       }
     </style>
   </head>
@@ -78,12 +97,14 @@
         <img src="./assets/images/image-web-3-desktop.jpg" alt="Abstract Art" />
         <div class="hero-content">
           <h1>The Bright Future of Web 3.0?</h1>
-          <p>
-            We dive into the next evolution of the web that claims to put the
-            power of the platforms back into the hands of the people. But is it
-            really fulfilling its promise?
-          </p>
-          <button>Read more</button>
+          <div>
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <p class="btn">Read more</p>
+          </div>
         </div>
       </section>
     </main>
