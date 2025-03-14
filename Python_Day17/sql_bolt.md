@@ -203,23 +203,3 @@ LIMIT 2 OFFSET 2;
 ```
 
 ![alt text](image-3.png)
-
-# Exercise 6 — Tasks
-
-6.1. Find the domestic and international sales for each movie
-
-```sql
-
-```
-
-6.2. Show the sales numbers for each movie that did better internationally rather than domestically
-
-```sql
-
-```
-
-6.3. List all the movies by their ratings in descending order
-
-```sql
-
-```
