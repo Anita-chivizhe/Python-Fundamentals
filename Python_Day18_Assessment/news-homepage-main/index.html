@@ -35,9 +35,9 @@
         margin-bottom: 30px;
       }
       .logo {
-        font-size: 100px;
-        font-weight: bold;
-        font-family: "Inter";
+        font-size: 50px;
+        font-weight: 800;
+        font-family: "Serif";
         color: hsl(240, 100%, 5%);
       }
       nav ul {
@@ -62,7 +62,7 @@
         margin-bottom: 20px;
       }
       .hero img {
-        width: 125%;
+        width: 100%;
         object-fit: cover;
       }
       .hero-content {
@@ -74,29 +74,30 @@
         font-family: "Inter";
       }
       .hero-content h1 {
-        font-size: 100px;
+        font-size: 50px;
         margin-top: 20px;
         line-height: 1.2;
         color: hsl(240, 100%, 5%);
+        width: 50%;
       }
       .hero-content-2 {
-        font-size: 30px;
+        font-size: 15px;
         margin-top: 20px;
         margin-left: 300px;
-        width: 100%;
+        width: 50%;
         line-height: 1.2;
         color: hsl(233, 8%, 79%);
       }
       .btn {
-        font-weight: 700;
+        font-weight: 900;
         margin-left: 300px;
         background-color: hsl(5, 85%, 63%);
         color: hsl(240, 100%, 5%);
         padding: 10px 20px;
         text-decoration: none;
-        font-size: 30px;
+        font-size: 15px;
         border-radius: 5px;
-        width: 55%;
+        width: px;
         text-transform: uppercase;
         letter-spacing: 15px;
       }
@@ -107,23 +108,26 @@
       .articles {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        justify-content: space-between;
+      align-items: center;
         gap: 20px;
         width: 100%;
+        padding: 0;
+        margin: 0;
       }
       .articles h3 {
         color: hsl(5, 85%, 63%);
         font-family: "Inter";
-        font-size: 50px;
+        font-size: 20px;
+
       }
       .articles h4 {
         font-family: "Inter";
-        font-size: 20px;
+        font-size: 15px;
         color: hsl(240, 100%, 5%);
       }
       .articles p {
         font-family: "Inter";
-        font-size: 20px;
+        font-size: 15px;
         width: 200px;
         color: hsl(233, 8%, 79%);
       }
@@ -135,12 +139,11 @@
         margin: 0px;
       }
       .articles-1 {
-        display: flex;
-        flex: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
       }
       .articles img {
-        width: 300px;
-        height: 320px;
+      max-width: 100%;
         object-fit: cover;
       }
       main {
@@ -175,8 +178,9 @@
               We dive into the next evolution of the web that claims to put the
               power of the platforms back into the hands of the people. But is
               it really fulfilling its promise?
+              <p class="btn">Read more</p>
             </p>
-            <p class="btn">Read more</p>
+
           </div>
         </div>
       </section>
