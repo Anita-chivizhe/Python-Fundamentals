@@ -22,30 +22,27 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
       body {
         font-family: "Inter";
-        body {
-          background-color: hsl(233, 47%, 7%);
-          font-family: "Inter", sans-serif;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-          margin: 0;
-          display: grid;
-          place-content: center;
-          min-height: 100vh;
-          margin: 0px;
-        }
+        font-family: "Inter", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+        margin: 0px;
+        padding: 40px;
       }
+
       header {
         display: flex;
         justify-content: space-between;
         padding: 20px;
+        margin: 20pxq;
+        align-items: center;
       }
       .logo {
         font-size: 50px;
@@ -70,25 +67,31 @@
       .hero img {
         width: 100%;
         object-fit: contain;
+        justify-self: center;
+        overflow: hidden;
+        padding-left: 20px;
+        padding-right: 20px;
       }
       .hero-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
+        display: flex;
+        width: 100%;
+
+        justify-content: space-between;
+        align-items: end;
         font-family: "Inter";
       }
       .hero-content h1 {
         font: size 15px;
         margin-bottom: 10px;
-        flex-wrap: wrap;
         width: 50%;
         font-size: 40px;
+        font-weight: 800;
       }
       .hero-content p {
         font: size 15px;
         margin-bottom: 10px;
         width: 50%;
-        justify-content: right;
+        justify-content: space-between;
       }
       .btn {
         display: inline-block;
@@ -100,11 +103,11 @@
         border-radius: 5px;
         width: 60px;
         text-transform: uppercase;
-        justify-content: center;
+        justify-content: space-between;
         font-weight: bold;
       }
       .btn:hover {
-        background-color: hsl(5, 85%, 63%);
+        background-color: hsl(5, 90%, 24%);
       }
       .articles {
         display: flex;
@@ -121,8 +124,12 @@
         font-size: 12px;
         line-height: 15px;
         justify-content: center;
-        width: 60%;
+        width: 50%;
         letter-spacing: 0.5px;
+        margin-right: ;
+      }
+      main {
+        padding: 0px;
       }
     </style>
   </head>
