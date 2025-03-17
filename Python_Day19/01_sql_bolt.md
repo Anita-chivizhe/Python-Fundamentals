@@ -99,3 +99,19 @@ ADD COLUMN Language TEXT DEFAULT "English";
 ```
 
 ![alt text](image-2.png)
+
+# Exercise 18 — Tasks
+
+We've sadly reached the end of our lessons, lets clean up by removing the Movies table
+
+```sql
+DROP TABLE movies;
+```
+
+And drop the BoxOffice table as well
+
+```sql
+DROP TABLE BoxOffice;
+```
+
+![alt text](image-3.png)
