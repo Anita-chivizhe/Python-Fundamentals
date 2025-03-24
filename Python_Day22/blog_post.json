@@ -1,0 +1,17 @@
+[
+    {
+        "title": "The Future of AI",
+        "author": "Alice",
+        "comments": 2
+    },
+    {
+        "title": "Learning Python",
+        "author": "Bob",
+        "comments": 1
+    },
+    {
+        "title": "Web Development Trends",
+        "author": "Charlie",
+        "comments": 0
+    }
+]
